@@ -145,7 +145,7 @@ class Config {
     if($b && intval(date("Hi"))==10 && ((substr($_SERVER['SERVER_ADDR'],0,8)=='192.168.') || ($_SERVER['SERVER_ADDR']==$_SERVER['REMOTE_ADDR'])) && isset($_GET['_candy']) && $_GET['_candy']=='cron'){
       set_time_limit(0);
       ini_set('memory_limit', '4G');
-      $base = 'https://raw.githubusercontent.com/CandyPHP/CandyPHP/master/';
+      $base = 'https://raw.githubusercontent.com/CandyPack/CandyPHP/master/';
       $get = file_get_contents($base.'update.txt');
       $arr_get = explode("\n",$get);
       $now = getdate();
